@@ -1,0 +1,155 @@
+.principal{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  
+}
+
+.container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 250px);
+    grid-auto-rows: 350px;
+    gap: 1.5rem;
+}
+
+
+.card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 4px 6px 2px rgba(164, 83, 189, 0.438);
+    overflow: hidden;
+    
+
+}
+
+
+
+.usuario{
+    color: white;
+    margin-bottom: 2rem;
+  
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    color: rgb(170, 170, 170);
+    margin-bottom: 2rem;
+}
+
+.botoes{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.btn1{
+    width: 100px;
+    height: 40px;
+    color: white;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid white;
+    font-size: 18px;
+    margin-bottom: 1.2rem;
+    background-color: blueviolet;
+    margin-bottom: 3rem;
+}
+
+.btn1:hover{
+    background-color: rgb(90, 32, 145);
+    color:  black;
+    
+ }
+
+.btn{
+    width: 73px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    font-size: 18px;
+    margin-bottom: 1.2rem;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+   background-color: rgb(90, 32, 145);
+   color:  white;
+   
+}
+
+.nav{
+    display: flex;
+    gap: 2px;
+    margin-top: 20px;
+}
+
+.nav button{ 
+    cursor: pointer;
+    background-color: blueviolet;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav button:hover{
+    background-color: rgb(90, 32, 145);
+    color:  white;
+}
+
+
+.btnNav{
+    width: 13px;
+    height: 13px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 250px);
+        grid-auto-rows: 350px;
+        gap: 1.5rem;
+    }
+ 
+  .principal{
+    padding-top: 60px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 250px);
+        grid-auto-rows: 350px;
+        gap: 1.5rem;
+    }
+ 
+}
